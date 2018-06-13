@@ -1,9 +1,7 @@
 package pluralsight.demo;
 
 
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
-
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 import java.net.URI;
 import java.util.List;
 import java.util.Locale;
@@ -30,15 +28,7 @@ public class UserResourceController {
 	@Autowired
 	UserRepository repository;
 	
-	@Autowired
-	private MessageSource messageSource;
 
-	@GetMapping(path="/hello")
-	public String helloWorldInternalized(@RequestHeader(name="Accept-Language", required =false) Locale locale) {
-		return messageSource.getMessage("good.morning.message", null, locale);
-	}
-	
-	
 	@GetMapping("/users")
 	public List<User> getUsers() {
 		return repository.getUsers();

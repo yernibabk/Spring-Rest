@@ -32,7 +32,7 @@ public class PluralsightSpringcloudM1StartupApplication {
 	}
 	
 	@Bean 
-	public ResourceBundleMessageSource messageSourceResourceBundle() {
+	public ResourceBundleMessageSource bundleMessageSource() {
 		ResourceBundleMessageSource source = new ResourceBundleMessageSource();
 		source.setBasename("messages");
 		return source;		

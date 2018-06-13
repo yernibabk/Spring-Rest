@@ -4,8 +4,7 @@ Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Raghavi
 Implementation-Vendor-Id: pluralsight.demo
 Build-Jdk: 1.8.0_51
-Implementation-URL: http://projects.spring.io/spring-boot/pluralsight-
- springcloud-m1-startup/
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/pluralsight-springcloud-m1-startup
 Created-By: Maven Integration for Eclipse
-Implementation-Vendor: Pivotal Software, Inc.
 
